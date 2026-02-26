@@ -38,6 +38,14 @@
             <artifactId>qpay-java</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
