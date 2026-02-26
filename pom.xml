@@ -34,9 +34,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>mn.qpay</groupId>
+            <groupId>com.github.qpay-sdk</groupId>
             <artifactId>qpay-java</artifactId>
-            <version>1.0.0</version>
+            <version>v1.0.0</version>
         </dependency>
 
         <!-- Test dependencies -->
@@ -50,8 +50,8 @@
 
     <repositories>
         <repository>
-            <id>github-qpay-java</id>
-            <url>https://maven.pkg.github.com/qpay-sdk/qpay-java</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
