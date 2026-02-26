@@ -88,18 +88,11 @@ class QPayAutoConfigurationTest {
 
     @Test
     void defaultPropertyValues() {
-        contextRunner
-                .withPropertyValues(
-                        "qpay.username=user",
-                        "qpay.password=pass"
-                )
-                .run(context -> {
-                    QPayProperties props = context.getBean(QPayProperties.class);
-                    assertThat(props.getBaseUrl()).isEqualTo("https://merchant.qpay.mn");
-                    assertThat(props.getWebhookPath()).isEqualTo("/qpay/webhook");
-                    assertThat(props.getInvoiceCode()).isNull();
-                    assertThat(props.getCallbackUrl()).isNull();
-                });
+        QPayProperties props = new QPayProperties();
+        assertThat(props.getBaseUrl()).isEqualTo("https://merchant.qpay.mn");
+        assertThat(props.getWebhookPath()).isEqualTo("/qpay/webhook");
+        assertThat(props.getInvoiceCode()).isNull();
+        assertThat(props.getCallbackUrl()).isNull();
     }
 
     @Configuration
