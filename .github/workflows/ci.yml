@@ -13,6 +13,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          server-id: github-qpay-java
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
       - run: mvn -B compile -DskipTests
         env:
+          GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
