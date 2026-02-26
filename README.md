@@ -1,6 +1,8 @@
 # QPay Spring Boot Starter
 
 [![CI](https://github.com/qpay-sdk/qpay-spring-boot-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/qpay-sdk/qpay-spring-boot-starter/actions)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.qpay-sdk/qpay-spring-boot-starter)](https://central.sonatype.com/artifact/io.github.qpay-sdk/qpay-spring-boot-starter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 QPay V2 payment integration for Spring Boot.
 
