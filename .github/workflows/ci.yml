@@ -13,4 +13,6 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: mvn -B compile
+      - run: mvn -B compile -DskipTests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
