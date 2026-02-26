@@ -1,5 +1,7 @@
 # QPay Spring Boot Starter
 
+[![CI](https://github.com/qpay-sdk/qpay-spring-boot-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/qpay-sdk/qpay-spring-boot-starter/actions)
+
 QPay V2 payment integration for Spring Boot.
 
 ## Install
