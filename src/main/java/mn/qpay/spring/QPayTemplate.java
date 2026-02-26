@@ -18,7 +18,7 @@ public class QPayTemplate {
         request.setInvoiceCode(properties.getInvoiceCode());
         request.setSenderInvoiceNo(senderInvoiceNo);
         request.setAmount(amount);
-        request.setCallbackUrl(properties.getCallbackUrl());
+        request.setCallbackURL(properties.getCallbackUrl());
         return client.createSimpleInvoice(request);
     }
 

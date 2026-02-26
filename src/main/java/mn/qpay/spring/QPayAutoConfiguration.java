@@ -15,11 +15,11 @@ public class QPayAutoConfiguration {
     @ConditionalOnMissingBean
     public QPayClient qPayClient(QPayProperties props) {
         QPayConfig config = QPayConfig.builder()
-                .baseUrl(props.getBaseUrl())
+                .baseURL(props.getBaseUrl())
                 .username(props.getUsername())
                 .password(props.getPassword())
                 .invoiceCode(props.getInvoiceCode())
-                .callbackUrl(props.getCallbackUrl())
+                .callbackURL(props.getCallbackUrl())
                 .build();
         return new QPayClient(config);
     }
