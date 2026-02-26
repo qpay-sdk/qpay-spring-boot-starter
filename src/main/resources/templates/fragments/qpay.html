@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="qr-code(qrImage, size)" style="text-align:center;">
+    <img th:src="'data:image/png;base64,' + ${qrImage}" alt="QPay QR Code"
+         th:width="${size ?: 256}" th:height="${size ?: 256}">
+</div>
+
+<div th:fragment="payment-buttons(urls)" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+    <a th:each="link : ${urls}" th:href="${link.link}" target="_blank"
+       style="display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border:1px solid #ddd;border-radius:8px;text-decoration:none;color:#333;font-size:14px;">
+        <img th:if="${link.logo}" th:src="${link.logo}" width="24" height="24" th:alt="${link.name}">
+        <span th:text="${link.name}">Bank</span>
+    </a>
+</div>
+
+</body>
+</html>
